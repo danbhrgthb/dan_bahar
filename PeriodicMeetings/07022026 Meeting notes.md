@@ -2,7 +2,7 @@
 
 ## What I accomplished last week
 
-[Link to last meeting notes](.06252026 Meeting notes.md)
+[06252026 Meeting notes.md](.06252026 Meeting notes.md)
 
 Goals from last week:
 - Push all my notes properly
