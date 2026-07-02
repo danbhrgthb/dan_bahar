@@ -18,20 +18,16 @@ Goals that can / should be accomplished in the next 3-6 months.
 
 Here's a description of my goal.
 
-- [ ] A sub-goal with a checkmark and [a link](https://example.com)
+- [ ] Familiarize myself with baqlava, waafle, and linux.
 
 ### Another goal
 
-Another description, with some details about plans
+Learn more about Charlotte's salt plasmid generation project.
 
 ## Long-term goals
 
-Goals that may take a year or more to accomplish.
+I want to get to know the people in the labs around us in addition to our lab, so that I can learn about the different kinds of work they do. I hope to figure out what excites me most by exploring a wide range of labs and making new friends.
 
 ## Career goals
 
-This section should describe what your long-term career aspirations are.
-Almost no one in the lab should expect to be in the Bonham Lab for the rest of their career,
-and knowing what you think you want to do next (even if there are many possiblities or no clear ideas)
-can help Kevin to provide mentorship and resources to support your development.
-
+Hopefully becoming an MD one day and continuing research in the process.
