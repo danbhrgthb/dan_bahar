@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "c41e607bf1996b46",
+    "id": "1de7c55500d650c3",
     "type": "split",
     "children": [
       {
-        "id": "e629812e703e5576",
+        "id": "d7529a3af8935444",
         "type": "tabs",
         "children": [
           {
-            "id": "fc6e03d158af9dc3",
+            "id": "75f8963e3da9361e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06252026 Meeting notes.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06252026 Meeting notes"
+              "title": "README"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "17c3584a548de566",
+    "id": "23eb900bc411e203",
     "type": "split",
     "children": [
       {
-        "id": "92e311efdad5a2e5",
+        "id": "97cf6852e2b867a6",
         "type": "tabs",
         "children": [
           {
-            "id": "a0cb5d8b9c2b4ac7",
+            "id": "cd0d365048b65383",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "89b5416f3d790bd6",
+            "id": "2caeb43143ff9f81",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "06d6f5bb057f578a",
+            "id": "16bfa414b83b3a07",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "a5b4a92f306e528b",
+    "id": "d4df9da0995fdb0c",
     "type": "split",
     "children": [
       {
-        "id": "c2a6962f47982749",
+        "id": "7f1621a8ef3c9432",
         "type": "tabs",
         "children": [
           {
-            "id": "fd516cdfd5124bc5",
+            "id": "26cfc1daff627122",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07022026 Meeting notes.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 07022026 Meeting notes"
+              "title": "Backlinks for README"
             }
           },
           {
-            "id": "241efe987bd39a94",
+            "id": "b1b5b36e7210fc25",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07022026 Meeting notes.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 07022026 Meeting notes"
+              "title": "Outgoing links from README"
             }
           },
           {
-            "id": "b8480a4575d9cd92",
+            "id": "2209b3c469df8c5a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +137,7 @@
             }
           },
           {
-            "id": "d7747a53789cdada",
+            "id": "2fda135eb2c450fd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +151,18 @@
             }
           },
           {
-            "id": "094277fc9c757492",
+            "id": "6221779876a13b20",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "07022026 Meeting notes.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 07022026 Meeting notes"
+              "title": "Outline of README"
             }
           }
         ]
@@ -183,13 +183,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "fc6e03d158af9dc3",
+  "active": "75f8963e3da9361e",
   "lastOpenFiles": [
-    "07022026 Meeting notes.md",
-    "ss of baqlava A00387 attempt",
-    "06252026 Meeting notes.md",
+    "06302026 waafleprotocol.md",
+    "06252026 Baqlava installation protocol.md",
+    "06252026 Dogen protocol.md",
     "README.md",
-    "Screenshot 2026-07-02 at 6.43.21 AM.png",
-    "YYYY-MM-DD_template.md"
+    "07012026 multi thread processing .md",
+    "06302026 waafle protocol.md"
   ]
 }
