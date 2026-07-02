@@ -16,6 +16,7 @@ I attempted to run baqlava on the sample metagenome A00387, but the program was 
 ## What I plan to do next week
 
 - [ ] Run 3-5 metagenome samples on dogen, to start the NextFlow pipeline
+- [ ] Edit previous protocols to include multi threading
 
 ### Notes
 
