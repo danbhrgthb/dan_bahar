@@ -1,4 +1,4 @@
-# TRAINEE_NAME lab repo
+# Dan Bahar lab repo
 
 Adapted from the [The Bonham Lab Trainee Template](https://github.com/BonhamLab/TraineeTemplate).
 
