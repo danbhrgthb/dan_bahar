@@ -4,10 +4,7 @@ Sources:
 - [https://github.com/biobakery/anadama2/blob/master/readme.rst](https://github.com/biobakery/anadama2/blob/master/readme.rst) 
     
 ## Dependency installation
-
 NOTE-kb: this section should probably be broken out into an "Initial Mac setup" page
-
-Part 1: Installing Homebrew and system-level packages:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git
