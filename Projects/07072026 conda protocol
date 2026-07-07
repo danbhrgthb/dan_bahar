@@ -1,29 +1,31 @@
 ## Conda
 
-Conda
+Conda is a package manager (like [Homebrew](07072026%20Initial%20mac%20setup.md#homebrew) and environment manager. Like Homebrew, it installs software; but it can install software within separate, independent workspaces that can't interfere with anything else. For example, we can use Python version 3.10 in one workspace while using Python 2.5 in a different workspace, without any conflicts.
 
 
-### Installing Conda
-NOTE-kb: this should also probably go into its own page (as it will be reused for other tools). Here, you could add something like "This setup uses [[Conda]] for package management - see that page if this is your first time setting it up" or something like that.
+## Installing Conda
 ```
 brew install miniconda
 conda init zsh
 source ~/.zshrc
 ```
+The last line is used to reload your terminal, which allows for changes to take affect immediately.
 
-### Building the environment
-Building the environment (baqlava_env), then installing baqlava within the environment
+## Using conda
+
+Because you have installed conda, you created different workspaces/enviornments within your computer. The default one is named base. You can tell which environment you're in by looking at the beginning of your terminal prompt
+
+To create a new enviornment,
 ```
-conda create -n baqlava_env python=3.10
+conda create -n baqlava_env
+```
+The -n flag is to enter a name for your envionrment (in this case, the name is baqlava_env).
+
+To enter an eneviornment,
+```
 conda activate baqlava_env
 ```
-
-'conda activate' moves into the new baqlave_env environment, labeled (baqlava_env). Ensure that you stay in it for the remainder of the protocol. In order to move out of it back to “(base)”, type *conda deactivate*
-    
-Conda is a tool that creates isolated environments within your computer. Now, we created and activated the (baqlava_env). Make sure you are in this environment when installing local packages.
-
+To leave an enviornment and return to (base),
 ```
-conda install -c bioconda -c conda-forge pandas scipy biopython humann=3.9 anadama2=0.10.0 baqlava
+conda deactivate
 ```
-
-In the above command, the -c flag represents a channel. In this case, we are looking to install the packages from two separate channels, bioconda and conda-forge.
