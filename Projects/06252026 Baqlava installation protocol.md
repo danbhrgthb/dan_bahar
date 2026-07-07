@@ -9,14 +9,9 @@ NOTE-kb: this section should probably be broken out into an "Initial Mac setup" 
 
 Part 1: Installing Homebrew and system-level packages:
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"*
-brew install git bowtie2 diamond
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git
 ```
-
-- git: the version control system
-
-
-NOTE-kb: Bowtie2 and diamond should really be managed by conda as well - they should be pulled in as transitive dependencies by humann / metaphlan, but if there's a problem, that needs to be fixed in the conda environment rather than at the system level.
 
 ### Installing Conda
 NOTE-kb: this should also probably go into its own page (as it will be reused for other tools). Here, you could add something like "This setup uses [[Conda]] for package management - see that page if this is your first time setting it up" or something like that.
@@ -24,11 +19,7 @@ NOTE-kb: this should also probably go into its own page (as it will be reused fo
 brew install miniconda
 conda init zsh
 source ~/.zshrc
-
 ```
-
-
-
 
 ### Building the environment
 Building the environment (baqlava_env), then installing baqlava within the environment
@@ -42,21 +33,18 @@ conda activate baqlava_env
 Conda is a tool that creates isolated environments within your computer. Now, we created and activated the (baqlava_env). Make sure you are in this environment when installing local packages.
 
 ```
-pip install --upgrade pip setuptools wheel
-pip install pandas scipy biopython
-pip install humann==3.9
-pip install anadama2==0.10.0
-pip install baqlava
-```  
+conda install -c bioconda -c conda-forge pandas scipy biopython humann=3.9 anadama2=0.10.0 baqlava
+```
 
-NOTE-kb: I'm not going to setup all the headers here - but better to use headers so that they can be linked to (eg [[06252026 Baqlava installation protocol#Installing Conda]])
+In the above command, the -c flag represents a channel. In this case, we are looking to install the packages from two separate channels, bioconda and conda-forge.
 
-Part 4: Testing the humann, then testing baqlava on demo data
+### Testing humann and baqlava on sample demo data
 
 Testing humann:
 ```
 humann_test
 ```
+
 Testing BAQLaVa, in a separate delete-able folder “baqlava_test,” using demo data:
 ```
 mkdir -p ~/baqlava_test
@@ -76,7 +64,7 @@ ls
 cat <filename shown on ls>
 ```
 
-Part 5: Installing the databases (chocophlan) for real runs within baqlava_env
+### Installing the Chocophlan database
 ​
 ```
 mkdir -p ~/databases
