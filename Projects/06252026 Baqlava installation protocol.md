@@ -54,7 +54,6 @@ cat <filename shown on ls>
 ```
 
 ### Installing the Chocophlan database
-​
 ```
 mkdir -p ~/databases
 humann_databases --download chocophlan full ~/databases 
@@ -64,6 +63,8 @@ What is chocophlan? It is a reference database of species-level microbial nucleo
   
 Of note, it is possible that the following website is down: huttenhower.sph.harvard.edu. To check if the website is down, go here: [https://downforeveryoneorjustme.com](https://downforeveryoneorjustme.com/)
 
+
+
 ------------------------------------------------------------------------
 After installing baqlava, here is a sample of how it can be run on files within "kneaddata" folder within the Desktop
 ```
@@ -71,4 +72,4 @@ mkdir -p ~/Desktop/baqlava_runs/A00062
 baqlava -i ~/Desktop/kneaddata/A00062_combined.fastq.gz -o ~/Desktop/baqlava_runs/A00062
 ```
 
-Note, no flags are needed as it will assume standard for all.
+Note: unlike the demo, real runs would benefit from [multi thread processing](07012026%20multi%20thread%20processing.md). baqlava defaults to a single thread, which is very slow — add a `--threads <N>` , where N = number of cores available.
