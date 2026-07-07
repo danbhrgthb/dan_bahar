@@ -4,19 +4,11 @@ Sources:
 - [https://github.com/biobakery/anadama2/blob/master/readme.rst](https://github.com/biobakery/anadama2/blob/master/readme.rst) 
     
 ## Dependency installation
-NOTE-kb: this section should probably be broken out into an "Initial Mac setup" page
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git
-```
 
-### Installing Conda
-NOTE-kb: this should also probably go into its own page (as it will be reused for other tools). Here, you could add something like "This setup uses [[Conda]] for package management - see that page if this is your first time setting it up" or something like that.
-```
-brew install miniconda
-conda init zsh
-source ~/.zshrc
-```
+Before running this protocol, make sure your machine is set up:
+
+- [Initial Mac setup](07072026%20Initial%20mac%20setup.md) — installs Homebrew and git
+- [Conda](07072026%20conda%20protocol.md) — package and environment manager
 
 ### Building the environment
 Building the environment (baqlava_env), then installing baqlava within the environment
