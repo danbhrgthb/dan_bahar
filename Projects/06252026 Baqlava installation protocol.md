@@ -27,7 +27,7 @@ conda install -c bioconda -c conda-forge pandas scipy biopython humann=3.9 anada
 
 In the above command, the -c flag represents a channel. In this case, we are looking to install the packages from two separate channels, bioconda and conda-forge.
 
-### Testing humann and baqlava on sample demo data
+### Testing HUMAnN and BAQLaVa on sample demo data
 
 Testing humann:
 ```
