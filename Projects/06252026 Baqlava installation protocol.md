@@ -50,7 +50,7 @@ ls
 cat <filename shown on ls>
 ```
 
-### Installing the Chocophlan database
+### Downloading databases
 ```
 mkdir -p ~/databases
 humann_databases --download chocophlan full ~/databases 
