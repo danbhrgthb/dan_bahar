@@ -60,7 +60,8 @@ baqlava_database --download database baqlava-db ~/databases
 Of note, it is possible that the following website is down: huttenhower.sph.harvard.edu. To check if the website is down, go here: [https://downforeveryoneorjustme.com](https://downforeveryoneorjustme.com/)
 
 
-------------------------------------------------------------------------
+## Running BAQLaVa
+
 After installing baqlava, here is a sample of how it can be run on files within "kneaddata" folder within the Desktop
 ```
 mkdir -p ~/Desktop/baqlava_runs/A00062
