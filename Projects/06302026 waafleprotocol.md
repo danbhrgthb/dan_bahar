@@ -53,7 +53,7 @@ Of note, huttenhower.sph.harvard.edu occasionally goes down. To check, visit dow
 
 WAAFLE runs in two steps on your assembled contigs:
 ```
-waafle_search A00387_contigs.fna ~/databases/waafle/chocophlan.v202210_202403.waafledb --threads 4
+waafle_search A00387_contigs.fna ~/databases/waafle/chocophlan.v202210_202403.waafledb
 ```
 This command blasts the contigs along the WAAFLE database
 
@@ -62,4 +62,4 @@ waafle_orgscorer A00387_contigs.fna A00387_contigs.blastout ~/databases/waafle/c
 ```
 This command identifies al the lateral gene transfer events.
 
-Note: See multi thread processing. Use a —threads (N) flag (N = number of cores available) for meaningful runs. See multi thread processing.
+Note: Runs would benefit from [multi thread processing](07012026%20multi%20thread%20processing.md). Use a —threads (N) flag (N = number of cores available) for meaningful runs. See multi thread processing.
