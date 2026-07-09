@@ -2,7 +2,11 @@ Sources:
 - [https://github.com/biobakery/baqlava/blob/master/readme.md#requirements](https://github.com/biobakery/baqlava/blob/master/readme.md#requirements)
 - [https://github.com/biobakery/humann/blob/master/readme.md](https://github.com/biobakery/humann/blob/master/readme.md)
 - [https://github.com/biobakery/anadama2/blob/master/readme.rst](https://github.com/biobakery/anadama2/blob/master/readme.rst) 
-    
+
+## Overview
+
+BAQLaVa, MetaPhlAn, and HUMAnN are all bioBakery tools that classify metagenomes. MetaPhlAn classifies which taxa are within the metagenome using marker genes. HUMAnN profiles the function by mapping the reads of each taxa against a known database, ChocoPhlAn. Finally, the reads that were not yet captured by MetaPhlAn or HUMAnN may be captured by BAQLaVa, which specializes in viral genome classification. Notbaly, MetaPhlAn is a dependency for HUMAnN; therefore, while it is not explicitly downloaded, it automatically installed with HUMAnN.
+
 ## Dependency installation
 
 Before running this protocol, make sure your machine is set up:
@@ -52,10 +56,8 @@ mkdir -p ~/databases
 humann_databases --download chocophlan full ~/databases 
 baqlava_database --download database baqlava-db ~/databases 
 ```
-What is chocophlan? It is a reference database of species-level microbial nucleotide sequences within HUMAnN, allowing for functional profiling of microbes.
   
 Of note, it is possible that the following website is down: huttenhower.sph.harvard.edu. To check if the website is down, go here: [https://downforeveryoneorjustme.com](https://downforeveryoneorjustme.com/)
-
 
 
 ------------------------------------------------------------------------
