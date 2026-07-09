@@ -1,5 +1,7 @@
 - Source: https://github.com/biobakery/waafle/blob/main/README.md
 
+## Overview
+
 WAAFLE finds horizontal gene transfer events within metagenomes. WAAFLE scans contigs for “unexpected,” or novel, gene sequences that do not fit that taxa’s expected sequence. When a contig contains a sequence of genes that appears to originate from elsewhere, WAAFLE labels that as a possible horizontal gene transfer event.
 
 ## Dependency installation
