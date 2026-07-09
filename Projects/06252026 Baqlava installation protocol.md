@@ -67,4 +67,4 @@ mkdir -p ~/Desktop/baqlava_runs/A00062
 baqlava -i ~/Desktop/kneaddata/A00062_combined.fastq.gz -o ~/Desktop/baqlava_runs/A00062
 ```
 
-Note: unlike the demo, real runs would benefit from [multi thread processing](07012026%20multi%20thread%20processing.md). baqlava defaults to a single thread, which is very slow — add a `--threads <N>` , where N = number of cores available.
+Note: unlike the demo, real runs would benefit from [multi thread processing](07012026%20multi%20thread%20processing.md). baqlava defaults to a single thread, which is very slow — add a --threads <N>, where N = number of cores available.
