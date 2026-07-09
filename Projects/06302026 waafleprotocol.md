@@ -8,8 +8,8 @@ WAAFLE finds horizontal gene transfer events within metagenomes. WAAFLE scans co
 
 Before running this protocol, make sure your machine is set up:
 
-- [Initial Mac setup](07072026%20Initial%20mac%20setup.md) installs Homebrew, git, and wget
-- [Conda](07072026%20conda%20protocol.md) is a package and environment manager
+- [Initial Mac setup](07072026%20Initial%20mac%20setup.md) — install Homebrew, git, and wget
+- [Conda](07072026%20conda%20protocol.md) — package and environment manager
 
 ### Building the environment
 
