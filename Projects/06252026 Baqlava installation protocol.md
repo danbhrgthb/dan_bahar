@@ -15,13 +15,6 @@ Building the environment (baqlava_env), then installing baqlava within the envir
 ```
 conda create -n baqlava_env python=3.10
 conda activate baqlava_env
-```
-
-'conda activate' moves into the new baqlave_env environment, labeled (baqlava_env). Ensure that you stay in it for the remainder of the protocol. In order to move out of it back to “(base)”, type *conda deactivate*
-    
-Conda is a tool that creates isolated environments within your computer. Now, we created and activated the (baqlava_env). Make sure you are in this environment when installing local packages.
-
-```
 conda install -c bioconda -c conda-forge pandas scipy biopython humann=3.9 anadama2=0.10.0 baqlava
 ```
 
