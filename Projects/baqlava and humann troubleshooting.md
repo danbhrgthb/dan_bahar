@@ -11,6 +11,7 @@ conda create -n baqlava_env "python=3.10" humann -c conda-forge -c bioconda -c b
 conda activate baqlava_env
 ```
 
+```
 error    libmamba Could not solve for environment specs
     The following packages are incompatible
     └─ humann =* * is not installable because there are no viable options
@@ -28,6 +29,7 @@ error    libmamba Could not solve for environment specs
        │  └─ metaphlan [>=3.0 *|>=3.0.0.alpha *|>=3.1 *|>=4.0 *], which cannot be installed (as previously explained);
        └─ humann 3.1.1 would require
           └─ metaphlan =3.1.0 *, which cannot be installed (as previously explained).
+```
 
 ## Overview
 
@@ -64,7 +66,7 @@ Every time one was fixed, another missing package popped up, so this did not wor
 
 ## Why I believe it is a bug
 
-1. `conda search -c conda-forge h5py` can find h5py instantly. If it were truly missing from the channel, then this command would not work.
+1. `conda search -c conda-forge h5py` can find h5py. If it were actually missing from the channel, it would not show up.
 
 2. The packages only disappear if they are dependencies. When the packages are explicitly named, they execute fine. Therefore, it is not a problem with the package itself but rather the installer failing to capture crucial packages.
 
