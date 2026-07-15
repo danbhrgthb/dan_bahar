@@ -6,7 +6,7 @@ Conclusion: The install is blocked by a bug in package manager micromamba 2.8.1 
 
 ## The code and error in question
 
-```bash
+```
 conda create -n baqlava_env "python=3.10" humann -c conda-forge -c bioconda -c biobakery
 conda activate baqlava_env
 ```
@@ -41,11 +41,11 @@ No change as it was already most recent version 2.8.1
 
 **2. Fix channels + flexible priority**
 
-```bash
+```
 conda config list
 ```
-
-```yaml
+Output:
+```
 channels:
   - conda-forge
   - bioconda
@@ -73,11 +73,11 @@ Every time one was fixed, another missing package popped up, so this did not wor
 At this point in the process, I thought that the sharded indexing method could potentially be dropping files. So, I tried to force micromamba to download each channel's full catalog rather than using sharded indexing. 
 I found out that sharded indexing uses compressed files for efficiency. So, I attempted to make the installer only use un-compressed files via `repodata_use_zst false`, thinking that micromamba would be forced to not use sharding.
 
-```bash
+```
 conda config list
 ```
-
-```yaml
+Output:
+```
 channels:
   - conda-forge
   - bioconda
