@@ -19,8 +19,8 @@ Building the environment (baqlava_env), then installing baqlava within the envir
 ```
 conda create -n baqlava_env python=3.10
 conda activate baqlava_env
-conda install -c conda-forge -c bioconda -c biobakery humann=3.9
-pip install anadama2==0.10.0 baqlava
+conda install -c conda-forge -c bioconda -c biobakery humann=3.9 anadama2==0.10.0
+pip install baqlava
 ```
 
 In the above command, the -c flag represents a channel. In this case, we are looking to install the packages from two separate channels, bioconda and conda-forge.
