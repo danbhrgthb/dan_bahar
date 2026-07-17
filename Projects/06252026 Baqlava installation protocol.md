@@ -2,7 +2,11 @@ Sources:
 - [https://github.com/biobakery/baqlava/blob/master/readme.md#requirements](https://github.com/biobakery/baqlava/blob/master/readme.md#requirements)
 - [https://github.com/biobakery/humann/blob/master/readme.md](https://github.com/biobakery/humann/blob/master/readme.md)
 - [https://github.com/biobakery/anadama2/blob/master/readme.rst](https://github.com/biobakery/anadama2/blob/master/readme.rst) 
-    
+
+## Overview
+
+BAQLaVa, MetaPhlAn, and HUMAnN are all bioBakery tools that classify metagenomes. MetaPhlAn classifies which taxa are within the metagenome using marker genes. HUMAnN profiles the function by mapping the reads of each taxa against a known database, ChocoPhlAn. Finally, the reads that were not yet captured by MetaPhlAn or HUMAnN may be captured by BAQLaVa, which specializes in viral genome classification. Notbaly, MetaPhlAn is a dependency for HUMAnN; therefore, while it is not explicitly downloaded, it automatically installed with HUMAnN.
+
 ## Dependency installation
 
 Before running this protocol, make sure your machine is set up:
@@ -15,19 +19,13 @@ Building the environment (baqlava_env), then installing baqlava within the envir
 ```
 conda create -n baqlava_env python=3.10
 conda activate baqlava_env
-```
-
-'conda activate' moves into the new baqlave_env environment, labeled (baqlava_env). Ensure that you stay in it for the remainder of the protocol. In order to move out of it back to “(base)”, type *conda deactivate*
-    
-Conda is a tool that creates isolated environments within your computer. Now, we created and activated the (baqlava_env). Make sure you are in this environment when installing local packages.
-
-```
-conda install -c bioconda -c conda-forge pandas scipy biopython humann=3.9 anadama2=0.10.0 baqlava
+conda install -c conda-forge -c bioconda -c biobakery humann=3.9 anadama2==0.10.0
+pip install baqlava
 ```
 
 In the above command, the -c flag represents a channel. In this case, we are looking to install the packages from two separate channels, bioconda and conda-forge.
 
-### Testing humann and baqlava on sample demo data
+### Testing HUMAnN and BAQLaVa on sample demo data
 
 Testing humann:
 ```
@@ -53,22 +51,22 @@ ls
 cat <filename shown on ls>
 ```
 
-### Installing the Chocophlan database
-​
+### Downloading databases
 ```
 mkdir -p ~/databases
 humann_databases --download chocophlan full ~/databases 
 baqlava_database --download database baqlava-db ~/databases 
 ```
-What is chocophlan? It is a reference database of species-level microbial nucleotide sequences within HUMAnN, allowing for functional profiling of microbes.
   
 Of note, it is possible that the following website is down: huttenhower.sph.harvard.edu. To check if the website is down, go here: [https://downforeveryoneorjustme.com](https://downforeveryoneorjustme.com/)
 
-------------------------------------------------------------------------
+
+## Running BAQLaVa
+
 After installing baqlava, here is a sample of how it can be run on files within "kneaddata" folder within the Desktop
 ```
 mkdir -p ~/Desktop/baqlava_runs/A00062
 baqlava -i ~/Desktop/kneaddata/A00062_combined.fastq.gz -o ~/Desktop/baqlava_runs/A00062
 ```
 
-Note, no flags are needed as it will assume standard for all.
+Note: unlike the demo, real runs would benefit from [multi thread processing](07012026%20multi%20thread%20processing.md). baqlava defaults to a single thread, which is very slow — add a --threads <N>, where N = number of cores available.
