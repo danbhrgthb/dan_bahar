@@ -14,3 +14,5 @@ gzip is a command that compresses files, and the -t tag is “testing” (does n
 - Test the following file in baqlava: lab/sequencing/processed/kneaddata within dogen, using AA00447 file instead (already within my Desktop)
 - Push all Obsidian notes
 - Install, make a protocol for, and familiarize myself with WAAFLE. Install within a different conda environment.
+
+- testtesttest
