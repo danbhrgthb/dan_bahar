@@ -40,8 +40,7 @@ baqlava -i ~/baqlava_test/baqlava/examples/demo.fq  -o ~/baqlava_test/demo_outp
 For the line of code above, baqlava is the command that we previously installed itself. The -i flag is the input, in this case the /baqlava_test/baqlava/examples/BAQLaVa_demo.fq. The -o flag is the output directory, in this case ~/baqlava_test/demo_output. The next two flags reference a demo nucleotide and a protein database, respectively, within the examples directory. The final flag --bypass tells baqlava to ignore bacteria within the sample, as the example dataset do not contain those (Probably the only time bypassing will be needed).
 
 ```
-pwd 
-	- Ensure that you are in demo_output
+pwd # Ensure that you are in demo_output!
 ls
 cat <filename shown on ls>
 ```
