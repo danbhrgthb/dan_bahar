@@ -10,7 +10,7 @@ ssh dogen
 tmux new -s <name>
 # The command needed, such as waafle_search .... --threads 8
 # press Ctrl-b, then d
-# now you can log out safely
+# log out
 ```
 
 To list active sessions, ```tmux ls```
