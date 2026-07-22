@@ -29,7 +29,7 @@ Save and exit nano with Ctrl+O, Enter, then Ctrl+X.
 
 4. Connect to dogen, and make sure you are on Tufts Secure network
 
-	```ssh dogen```
+```ssh dogen```
 
 5.  Copy files between dogen and your laptop.
 ```
