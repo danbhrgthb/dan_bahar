@@ -14,3 +14,4 @@ tmux new -s <name>
 ```
 
 To list active sessions, ```tmux ls```
+To reattach to a job, ```tmux attach -t waafle```
