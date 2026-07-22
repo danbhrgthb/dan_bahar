@@ -14,16 +14,3 @@ brew insall wget #Download online files/databases
 brew install tmux #Terminal MUlti-Plexer) lets you run sessions even after you have disconnected.
 ```
 
-
-To "kick off" jobs within dogen:
-```
-ssh dogen
-tmux new -s <name>
-# The command needed, such as waafle_search .... --threads 8
-# press Ctrl-b, then d
-# now you can log out safely
-```
-To list active sessions,
-```
-tmux ls
-```
