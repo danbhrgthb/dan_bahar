@@ -11,6 +11,6 @@ These packages are typically system-level, meaning they can oversee everything w
 ```
 brew install git #work in sync with github
 brew insall wget #Download online files/databases
-brew install tmux #Terminal MUlti-Plexer) lets you run sessions even after you have disconnected.
+brew install tmux #Terminal MUlti-Plexer lets you run sessions even after you have disconnected.
 ```
 
