@@ -43,3 +43,5 @@ micromamba config append channels biobakery
 ```
 
 To check channel priority, ```micromamba config list```
+
+Of note, protocols after 07/21/2026 will have no '-c' flags, as you do not need the channel flags if they are already built within your system. 
