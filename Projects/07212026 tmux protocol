@@ -1,1 +1,4 @@
-### Tmux
+### Tmux (Terminal Multi-Plexer)
+
+Tmux allows for multiple terminal sessions to run simultaneously. It is also very useful for "kicking off" jobs within dogen, which means that the job will run even after you disconnect from dogen.
+
