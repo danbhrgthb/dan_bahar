@@ -51,6 +51,8 @@ Of note, huttenhower.sph.harvard.edu occasionally goes down. To check, visit dow
 
 ### Running WAAFLE
 
+Before running waafle, please make sure to have also installed [MEGAHIT](07222026%20megahit.md).
+
 WAAFLE runs in two steps on your assembled contigs:
 ```
 waafle_search A00387_contigs.fna ~/databases/waafle/chocophlan.v202210_202403.waafledb
