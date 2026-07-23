@@ -33,7 +33,7 @@ Save and exit nano with Ctrl+O, Enter, then Ctrl+X.
 
 ## BioBakery Dogen setup
 
-BioBakery is a essentially a computational biologist's tool box for analyzing genomes. We need to set up channel priority within dogen to fit within the standard BioBakery protocols.
+BioBakery is a essentially a computational biologist's tool box for analyzing metagenomes. We need to set up channel priority within dogen to fit within the standard BioBakery protocols.
 
 ```
 micromamba config append channels nodefaults
