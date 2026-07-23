@@ -2,6 +2,8 @@
 
 Note: Use micromamba v1.4.3
 
+[baqlava_env.yaml]
+```yaml
 name: baqlava_env
 channels:
   - conda-forge
@@ -14,8 +16,12 @@ dependencies:
   - pip
   - pip:
       - baqlava
+```
+
    
 ### Waafle:
+
+```yaml
 name: waafle_env
 channels:
   - conda-forge
@@ -32,3 +38,4 @@ channels:
   - biobakery
 dependencies:
   - megahit
+```

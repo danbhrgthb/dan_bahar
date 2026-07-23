@@ -1,0 +1,12 @@
+name: baqlava_env
+channels:
+  - conda-forge
+  - bioconda
+  - biobakery
+dependencies:
+  - python=3.12
+  - humann=3.9
+  - anadama2
+  - pip
+  - pip:
+      - baqlava
