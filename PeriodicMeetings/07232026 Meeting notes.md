@@ -7,6 +7,7 @@
 - [x] Edited past protocols, now that I understand the syntax and conceptual idea better
 - [x] Installed megahit
 - [x] Troubleshooted waafle problems (i.e. lack of megahit and some commands)
+- [X] Kicked off first job within dogen, eta end of this week?
 
 
 ### Notes
