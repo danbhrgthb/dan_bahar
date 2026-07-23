@@ -12,7 +12,7 @@ The '-t ed25519' is the type of key that is being generated, and the '-N ""' set
 
 You should see a pair: dogen-key (private) and dogen-key.pub (public and safe to share). 
 
-2. Send your public key to Kevin via Zulip via ```cat ~/.ssh/dogen-key.pub```
+2. Send your public key to Kevin via Zulip via `cat ~/.ssh/dogen-key.pub`
 
 3. Creating a config for Dogen
 	```nano ~/.ssh/config```
