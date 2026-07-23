@@ -4,8 +4,11 @@
 
 [Link to last meeting notes](./YYYY-MM-DD.md)<!-- Edit this link to the date of the last meeting -->
 
-- [x] Thing 1
-- [x] Thing 2
+- [x] Edited past protocols, now that I understand the syntax and conceptual idea better
+- [x] Installed megahit
+- [x] Troubleshooted waafle problems (i.e. lack of megahit and some commands)
+- [X] Kicked off first job within dogen, eta end of this week?
+
 
 ### Notes
 
@@ -15,8 +18,8 @@ Any further explanation / links
 
 <!-- Note: For longer-term goals or tasks, also add to project notes or to appropriate project repository -->
 
-- [ ] Thing 3
-- [ ] Thing 4
+- [ ] By the end of this week, I will create the dockerfiles, for both the current and new micromamba versions
+- [ ] Look into nextflow
 
 ### Notes
 
@@ -32,5 +35,5 @@ This week, (check all that apply):
 
 - [ ] I accomplished all or most of my goals
 - [ ] I used my time wisely
-- [ ] I struggled with a problem, but solved it
+- [X] I struggled with a problem, but solved it
 - [ ] I ran into an issue I could not solve on my own.

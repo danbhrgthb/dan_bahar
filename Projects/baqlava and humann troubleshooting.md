@@ -89,3 +89,7 @@ channel_priority: flexible
 ```
 
 However, even after doing so, micromamba was still using sharded indexing, somehow, and the same error occurred.
+
+### UPDATE:
+
+Downgrading to micromamba version 1.4.5 worked.
