@@ -4,12 +4,11 @@ A Dockerfile is the recipe for building a container, and you keep this recipe in
 
 ## Drafting the yaml
 
-Before proceeding to make a Dockerfile, you must first create a yaml file (link), with all of the environment’s ingredients. One notable change: the name of the environment will always be “base”, regardless of what you are trying to build a Dockerfile for. While dogen can have multiple environments, like waafle_env and baqlava_env, the container only has one environment. Because the container only has one environment, we name it base.
-You can name the environment whatever you want on github, but we will be changing its name to base later.
+Before proceeding to make a Dockerfile, you must first create a [yaml file](waafle_env.yaml), with all of the environment’s ingredients. While dogen can have multiple environments, like waafle_env and baqlava_env, the container only has one environment.Because the container only has one environment, we name it "base". Of note, you can name the environment whatever you want on github, but we will be changing its name to base later.
 
 ## Drafting the Dockerfile
 
-Below is the waafle Dockerfile (called waafle143_dockerfile, for micromamba 1.4.3). Most Dockerfiles use the same standardized 5-line structure (Baqlava needs a sixth line “RUN pip install baqlava”, because pip can be a bit weird).
+Below is the waafle Dockerfile (called [waafle143_dockerfile](waafle281_dockerfile), for micromamba 1.4.3). Most Dockerfiles use the same standardized 5-line structure (a Baqlava dockerfile needs a sixth line `RUN pip install baqlava`, because pip can be a bit weird).
 
 ```
 FROM mambaorg/micromamba:1.4.3
