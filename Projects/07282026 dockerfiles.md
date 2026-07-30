@@ -18,22 +18,12 @@ ARG MAMBA_DOCKERFILE_ACTIVATE=1
 RUN waafle_search --help
 ```
 
-FROM mambaorg/micromamba:1.4.3
+`FROM mambaorg/micromamba:1.4.3` When making the container, use package manager micromamba 1.4.3.
 
-– When making the container, use package manager micromamba 1.4.3.
+`COPY --chown=$MAMBA_USER:$MAMBA_USER waafle_env.yaml /tmp/env.yaml` Copies your waafle_env.yaml file into the container under the name env.yaml. /tmp/env.yaml = where it lands inside the container; --chown=$MAMBA_USER:$MAMBA_USER = hands the file to the container’s normal user, as opposed to the admin. Do not put your actual username into this command, keep the $MAMBA_USER:$MAMBA_USER.
 
-COPY --chown=$MAMBA_USER:$MAMBA_USER waafle_env.yaml /tmp/env.yaml
+`RUN micromamba install -y -n base -f /tmp/env.yaml` Install the packages. -y = yes to all prompts; -n base = into the "base" environment; -f /tmp/env.yaml = using the yaml from above.
 
-– Copies your waafle_env.yaml file into the container under the name env.yaml. /tmp/env.yaml = where it lands inside the container; --chown=$MAMBA_USER:$MAMBA_USER = hands the file to the container’s normal user, as opposed to the admin. Do not put your actual username into this command, keep the $MAMBA_USER:$MAMBA_USER.
+`ARG MAMBA_DOCKERFILE_ACTIVATE=1` Switch the base environment ON for the line below.
 
-RUN micromamba install -y -n base -f /tmp/env.yaml
-
-– Installs the packages. -y = yes to all prompts; -n base = into the "base" environment; -f /tmp/env.yaml = using the yaml from above.
-
-ARG MAMBA_DOCKERFILE_ACTIVATE=1
-
-– Switch the base environment ON for the line below.
-
-RUN waafle_search --help
-
-– Try running waafle to ensure that it is actually installed.
+`RUN waafle_search --help` Try running waafle to ensure that it is actually installed.
