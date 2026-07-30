@@ -19,11 +19,10 @@ dependencies:
   - pip:
       - baqlava
 ```
-```
 
-   
-### Waafle:
+### Waafle
 
+[waafle_env.yaml]
 ```yaml
 name: waafle_env
 channels:
@@ -32,13 +31,5 @@ channels:
   - biobakery
 dependencies:
   - waafle
-
-### Megahit
-name: megahit_env
-channels:
-  - conda-forge
-  - bioconda
-  - biobakery
-dependencies:
   - megahit
 ```
