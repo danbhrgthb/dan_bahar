@@ -1,5 +1,7 @@
 ## Building the Dockerfile on your local computer with Docker
 
+Docker is a container engine that works locally.
+
 `docker build -t waafle:1.4.3 -f waafle143_dockerfile .`
  
 docker build = do the recipe; -t waafle:1.4.3 = name the finished container; -f waafle143_dockerfile = which dockerfile to use; the . = the files are in this folder.
