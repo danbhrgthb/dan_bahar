@@ -10,7 +10,6 @@ docker build = do the recipe; -t waafle:1.4.3 = name the finished container; -f 
 
 Podman is a container engine that works on dogen. Check if Podman is installed with: `podman --version`
 
-First pull the files from GitHub, then build:
 ```
 podman build --format=docker -t waafle_container -f waafle143_dockerfile .
 ```
