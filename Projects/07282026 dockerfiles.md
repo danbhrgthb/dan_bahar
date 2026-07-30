@@ -1,4 +1,4 @@
-### Docker Overview
+## Docker Overview
 
 The goal of constructing a Dockerfile within GitHub is that you will then be able to build and run an image based on the Dockerfile. Podman and Docker can both read this file.
 
