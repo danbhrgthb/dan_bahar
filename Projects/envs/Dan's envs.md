@@ -5,7 +5,6 @@ Note: Use micromamba v1.4.3
 [baqlava_env.yaml]
 ```yaml
 `baqlava_env.yaml`
-```yaml
 name: baqlava_env
 channels:
   - conda-forge
