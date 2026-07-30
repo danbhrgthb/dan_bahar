@@ -30,10 +30,3 @@ ARG MAMBA_DOCKERFILE_ACTIVATE=1
 RUN waafle_search --help
 – Try running waafle to ensure that it is actually installed.
 
-## Building the Dockerfile on your local computer
-
-
-`docker build -t waafle:1.4.3 -f waafle143_dockerfile .`
- 
-docker build = do the recipe; -t waafle:1.4.3 = name the finished container; -f waafle143_dockerfile = which dockerfile to use; the . = the files are in this folder.
-
