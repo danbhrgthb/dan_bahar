@@ -1,6 +1,6 @@
-## Docker Overview
+## Dockerfiles Overview
 
-The goal of constructing a Dockerfile within GitHub is that you will then be able to build and run an image based on the Dockerfile. Podman and Docker can both read this file.
+A Dockerfile is the recipe for building a container, and you keep this recipe in github. On whatever machine has the file, you can build and run an image based on it. Both Podman and Docker can read the same Dockerfile.
 
 ## Drafting the yaml
 
@@ -18,15 +18,14 @@ RUN micromamba install -y -n base -f /tmp/env.yaml
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 RUN waafle_search --help
 ```
- 
+
 FROM mambaorg/micromamba:1.4.3
 – When making the container, use package manager micromamba 1.4.3.
 COPY --chown=$MAMBA_USER:$MAMBA_USER waafle_env.yaml /tmp/env.yaml
 – Copies your waafle_env.yaml file into the container under the name env.yaml. /tmp/env.yaml = where it lands inside the container; --chown=$MAMBA_USER:$MAMBA_USER = hands the file to the container’s normal user, as opposed to the admin.
 RUN micromamba install -y -n base -f /tmp/env.yaml
-– Installs the packages. -y = yes to all prompts; -n base = into the base environment; -f /tmp/env.yaml = using the yaml from above.
+– Installs the packages. -y = yes to all prompts; -n base = into the "base" environment; -f /tmp/env.yaml = using the yaml from above.
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 – Switch the base environment ON for the line below.
 RUN waafle_search --help
 – Try running waafle to ensure that it is actually installed.
-
