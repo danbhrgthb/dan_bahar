@@ -2,7 +2,9 @@
 
 Docker is a container engine that works locally.
 
-`docker build -t waafle:1.4.3 -f waafle143_dockerfile .`
+```
+docker build -t waafle:1.4.3 -f ~/envs/waafle143_dockerfile ~/envs
+```
  
 docker build = do the recipe; -t waafle:1.4.3 = name the finished container; -f waafle143_dockerfile = which dockerfile to use; the . = the files are in this folder.
 
