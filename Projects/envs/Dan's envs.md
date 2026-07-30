@@ -24,6 +24,7 @@ dependencies:
 
 [waafle_env.yaml]
 ```yaml
+`waafle_env.yaml`
 name: waafle_env
 channels:
   - conda-forge
