@@ -33,3 +33,18 @@ dependencies:
   - waafle
   - megahit
 ```
+
+
+### MSA
+
+[msa_env.yaml]
+```yaml
+name: msa_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - clustalo
+  - seqkit
+  - pal2nal
+```
