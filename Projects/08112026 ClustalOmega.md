@@ -3,6 +3,8 @@
 
 In our case, because we are using multiple strains of the same species, this process should theoretically be very fast.
 
+Please see the [msa_yaml](msa_env.yaml) file to build your very own MSA enviornment within dogen
+
 ### dN/dS
 dN/dS is a measurement that tells you the rate of non-synonymous mutations (did protein change?) to synonymous mutations (did protein stay the same?) within a gene. In other words, it can tell you whether the gene is under positive/diversifying selection (dN/dS >1), or conservative/stabalizing selection (dN/dS <1))
 
