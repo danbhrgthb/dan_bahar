@@ -43,6 +43,7 @@ name: msa_env
 channels:
   - conda-forge
   - bioconda
+  - biobakery
 dependencies:
   - clustalo
   - seqkit
