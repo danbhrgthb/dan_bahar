@@ -4,6 +4,7 @@ channels:
   - bioconda
   - biobakery
 dependencies:
+  - blast
   - clustalo
   - seqkit
   - pal2nal
